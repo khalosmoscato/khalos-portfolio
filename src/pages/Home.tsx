@@ -1,22 +1,23 @@
-import React from "react";
+import React from 'react';
 
 const Home: React.FC = () => {
   return (
     <section
       id="home"
-      className="flex flex-col items-center justify-center min-h-screen text-center px-4"
+      className="flex min-h-screen flex-col items-center justify-center px-4 text-center"
       aria-label="Home section"
     >
-      <h1 className="text-4xl sm:text-5xl font-bold mb-4">
+      <h1 className="mb-4 text-4xl font-bold sm:text-5xl">
         Hi, I’m Khalos Calogero Filho Moscato 👋
       </h1>
-      <p className="text-lg sm:text-xl mb-6 max-w-2xl">
-        Turning ideas into code with <strong>React</strong>, <strong>TypeScript</strong>, <strong>C#</strong> & <strong>Python</strong>.  
-        Passionate about building accessible, responsive, and impactful digital experiences.
+      <p className="mb-6 max-w-2xl text-lg sm:text-xl">
+        Turning ideas into code with <strong>React</strong>, <strong>TypeScript</strong>,{' '}
+        <strong>C#</strong> & <strong>Python</strong>. Passionate about building
+        accessible, responsive, and impactful digital experiences.
       </p>
       <a
         href="#projects"
-        className="bg-primary text-white px-6 py-3 rounded-2xl shadow-md hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary"
+        className="rounded-2xl bg-primary px-6 py-3 text-white shadow-md hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary"
       >
         View My Projects
       </a>

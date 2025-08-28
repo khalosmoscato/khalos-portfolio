@@ -4,7 +4,7 @@ import Navbar from '../Navbar';
 describe('Navbar component', () => {
   it('renders links correctly', () => {
     render(<Navbar />);
-    
+
     // Check if links are rendered
     expect(screen.getByText(/About/i)).toBeInTheDocument();
     expect(screen.getByText(/Projects/i)).toBeInTheDocument();

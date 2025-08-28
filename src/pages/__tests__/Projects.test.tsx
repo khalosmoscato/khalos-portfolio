@@ -6,7 +6,9 @@ describe('Projects page', () => {
     render(<Projects />);
 
     expect(screen.getByRole('heading', { name: /Projects/i })).toBeInTheDocument();
-    expect(screen.getByText(/I’ll soon showcase selected projects here/i)).toBeInTheDocument();
+    expect(
+      screen.getByText(/I’ll soon showcase selected projects here/i),
+    ).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /GitHub/i })).toBeInTheDocument();
     expect(screen.getByText(/Coming Soon 🚧/i)).toBeInTheDocument();
   });

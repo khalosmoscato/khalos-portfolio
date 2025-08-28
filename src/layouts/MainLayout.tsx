@@ -9,7 +9,7 @@ interface MainLayoutProps {
 
 const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
-    <div className="min-h-screen flex flex-col bg-background dark:bg-background-dark text-text dark:text-text-inverted">
+    <div className="flex min-h-screen flex-col bg-background text-text dark:bg-background-dark dark:text-text-inverted">
       <a href="#main" className="skip-link">
         Skip to content
       </a>

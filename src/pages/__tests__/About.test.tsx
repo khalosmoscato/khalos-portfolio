@@ -9,29 +9,31 @@ describe('About page', () => {
 
   test('renders About page content', () => {
     // First paragraph (contains "Khalos Moscato")
-    const paragraphs = screen.getAllByText((_content, element) =>
-      !!element && element.textContent?.includes('Khalos Moscato')
+    const paragraphs = screen.getAllByText(
+      (_content, element) => !!element && element.textContent?.includes('Khalos Moscato'),
     );
 
-    const firstParagraph = paragraphs.find(el => el.tagName === 'P');
+    const firstParagraph = paragraphs.find((el) => el.tagName === 'P');
     expect(firstParagraph).toBeInTheDocument();
 
     // Second paragraph (contains "DevOps" and "AI/ML engineering")
-    const secondParagraph = screen.getAllByText((_content, element) =>
-      !!element &&
-      element.tagName === 'P' &&
-      element.textContent?.includes('DevOps') &&
-      element.textContent?.includes('AI/ML engineering')
+    const secondParagraph = screen.getAllByText(
+      (_content, element) =>
+        !!element &&
+        element.tagName === 'P' &&
+        element.textContent?.includes('DevOps') &&
+        element.textContent?.includes('AI/ML engineering'),
     )[0];
     expect(secondParagraph).toBeInTheDocument();
 
     // Third paragraph (contains "cycling", "travelling", "piano")
-    const thirdParagraph = screen.getAllByText((_content, element) =>
-      !!element &&
-      element.tagName === 'P' &&
-      element.textContent?.includes('cycling') &&
-      element.textContent?.includes('travelling') &&
-      element.textContent?.includes('piano')
+    const thirdParagraph = screen.getAllByText(
+      (_content, element) =>
+        !!element &&
+        element.tagName === 'P' &&
+        element.textContent?.includes('cycling') &&
+        element.textContent?.includes('travelling') &&
+        element.textContent?.includes('piano'),
     )[0];
     expect(thirdParagraph).toBeInTheDocument();
 
@@ -40,6 +42,3 @@ describe('About page', () => {
     expect(getInTouchButton).toBeInTheDocument();
   });
 });
-
-
-

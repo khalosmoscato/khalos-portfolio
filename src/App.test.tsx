@@ -15,12 +15,7 @@ describe('App component', () => {
 
     // Footer links (best practice: scope to footer)
     const footer = screen.getByRole('contentinfo'); // targets <footer>
-    expect(
-      within(footer).getByRole('link', { name: /GitHub/i })
-    ).toBeInTheDocument();
-    expect(
-      within(footer).getByRole('link', { name: /LinkedIn/i })
-    ).toBeInTheDocument();
+    expect(within(footer).getByRole('link', { name: /GitHub/i })).toBeInTheDocument();
+    expect(within(footer).getByRole('link', { name: /LinkedIn/i })).toBeInTheDocument();
   });
 });
-

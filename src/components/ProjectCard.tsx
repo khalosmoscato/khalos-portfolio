@@ -18,23 +18,23 @@ const ProjectCard: React.FC<Props> = ({
   imageUrl,
 }) => {
   return (
-    <article className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow focus-within:ring-2 focus-within:ring-accent focus-within:ring-offset-2">
+    <article className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-md transition-shadow focus-within:ring-2 focus-within:ring-accent focus-within:ring-offset-2 hover:shadow-lg dark:border-gray-700 dark:bg-gray-800">
       {imageUrl && (
         <img
           src={imageUrl}
           alt={`${title} screenshot`}
-          className="w-full h-40 object-cover"
+          className="h-40 w-full object-cover"
         />
       )}
       <div className="p-6">
-        <h3 className="font-heading text-xl mb-2">{title}</h3>
-        <p className="text-text-light dark:text-gray-300 mb-4">{description}</p>
+        <h3 className="mb-2 font-heading text-xl">{title}</h3>
+        <p className="mb-4 text-text-light dark:text-gray-300">{description}</p>
         {tags.length > 0 && (
-          <ul className="flex flex-wrap gap-2 mb-4">
+          <ul className="mb-4 flex flex-wrap gap-2">
             {tags.map((t) => (
               <li
                 key={t}
-                className="text-xs px-2 py-1 rounded-full border border-gray-300 dark:border-gray-600"
+                className="rounded-full border border-gray-300 px-2 py-1 text-xs dark:border-gray-600"
               >
                 {t}
               </li>
@@ -44,7 +44,7 @@ const ProjectCard: React.FC<Props> = ({
         <div className="flex flex-wrap gap-4">
           <a
             href={link}
-            className="text-primary hover:text-primary-light font-medium focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
+            className="font-medium text-primary hover:text-primary-light focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
           >
             Live Demo →
           </a>

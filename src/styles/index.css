@@ -12,7 +12,12 @@ body {
   color: #242424;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.2;
 }
 
@@ -21,7 +26,8 @@ a {
   color: #646cff;
   text-decoration: underline;
 }
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #747bff;
   outline: none;
 }
@@ -36,17 +42,18 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover, button:focus-visible {
+button:hover,
+button:focus-visible {
   border-color: #646cff;
   outline: none;
 }
 
 /* Skip link */
 .skip-link {
-  @apply sr-only focus:not-sr-only fixed left-2 top-2 z-50 bg-white dark:bg-gray-800 text-black dark:text-white px-3 py-2 rounded-md shadow;
+  @apply sr-only fixed left-2 top-2 z-50 rounded-md bg-white px-3 py-2 text-black shadow focus:not-sr-only dark:bg-gray-800 dark:text-white;
 }
 
 /* Section spacing helper */
 .section {
-  @apply py-16 px-4;
+  @apply px-4 py-16;
 }

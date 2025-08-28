@@ -5,7 +5,7 @@ test('MainLayout renders with children and navbar content', () => {
   render(
     <MainLayout>
       <div>Test Content</div>
-    </MainLayout>
+    </MainLayout>,
   );
 
   // Check children

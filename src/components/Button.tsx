@@ -1,5 +1,5 @@
-import React from "react";
-import { colors } from "@styles/theme";
+import React from 'react';
+import { colors } from '@styles/theme';
 
 interface ButtonProps {
   children: React.ReactNode;

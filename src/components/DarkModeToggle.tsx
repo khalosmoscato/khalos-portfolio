@@ -6,7 +6,7 @@ const DarkModeToggle: React.FC = () => {
   return (
     <button
       onClick={toggleDarkMode}
-      className="ml-2 p-2 rounded-md border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
+      className="ml-2 rounded-md border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 dark:border-gray-600"
       aria-label="Toggle dark mode"
       title="Toggle dark mode"
     >
@@ -16,4 +16,3 @@ const DarkModeToggle: React.FC = () => {
 };
 
 export default DarkModeToggle;
-
