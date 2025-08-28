@@ -2,7 +2,7 @@
 
 Hi! I’m **Khalos CF Moscato**, a creative, detail-oriented software engineer based in **London**. I build **full-stack web and mobile apps** using **React, TypeScript, Node.js, Tailwind CSS**, and more. I’m passionate about **DevOps, AI/ML, fintech, biotech**, and delivering **responsive, accessible, and high-quality web experiences**.  
 
-🌐 **Live Portfolio:** [https://your-vercel-url.vercel.app](https://your-vercel-url.vercel.app)  
+🌐 **Live Portfolio:** [https://khalos-portfolio.vercel.app](https://khalos-portfolio.vercel.app)  
 📧 **Contact:** khalos.moscato@gmail.com  
 
 ---
