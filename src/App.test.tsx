@@ -2,23 +2,25 @@ import { render, screen, within } from '@testing-library/react';
 import App from './App';
 
 describe('App component', () => {
-  it('renders all placeholder sections and header/footer text', () => {
+  beforeEach(() => {
     render(<App />);
+  });
 
-    // Check all placeholder sections
-    const placeholders = ['Home page placeholder', 'About page placeholder', 'Projects page placeholder', 'Contact page placeholder'];
-    placeholders.forEach((text) => {
-      expect(screen.getByText(new RegExp(text, 'i'))).toBeInTheDocument();
-    });
+  it('renders all main sections', () => {
+    // Home, About, Projects, Contact sections
+    expect(screen.getByLabelText(/Home section/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/About section/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/Projects section/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/Contact section/i)).toBeInTheDocument();
 
-    // Check navbar text
-    const nav = screen.getByRole('navigation');
-    expect(within(nav).getByText(/Khalos CF Moscato/i)).toBeInTheDocument();
-
-    // Check footer text
-    const footer = screen.getByRole('contentinfo');
-    expect(within(footer).getByText(/Khalos CF Moscato/i)).toBeInTheDocument();
-    expect(within(footer).getByText(/Built with React \+ TypeScript/i)).toBeInTheDocument();
+    // Footer links (best practice: scope to footer)
+    const footer = screen.getByRole('contentinfo'); // targets <footer>
+    expect(
+      within(footer).getByRole('link', { name: /GitHub/i })
+    ).toBeInTheDocument();
+    expect(
+      within(footer).getByRole('link', { name: /LinkedIn/i })
+    ).toBeInTheDocument();
   });
 });
 

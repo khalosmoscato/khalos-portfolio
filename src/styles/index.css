@@ -2,10 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-/* consistent section spacing */
-.section { @apply py-section px-4; }
+/* Base body + typography */
+body {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  min-width: 320px;
+  background-color: #ffffff;
+  color: #242424;
+}
 
-/* skip-link: visually hidden but available when focused */
+h1,h2,h3,h4,h5,h6 {
+  line-height: 1.2;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: underline;
+}
+a:hover, a:focus {
+  color: #747bff;
+  outline: none;
+}
+
+button {
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover, button:focus-visible {
+  border-color: #646cff;
+  outline: none;
+}
+
+/* Skip link */
 .skip-link {
   @apply sr-only focus:not-sr-only fixed left-2 top-2 z-50 bg-white dark:bg-gray-800 text-black dark:text-white px-3 py-2 rounded-md shadow;
+}
+
+/* Section spacing helper */
+.section {
+  @apply py-16 px-4;
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import useDarkMode from '@hooks/useDarkMode';
 
-// Simple, dependency-free toggle that persists choice.
 const DarkModeToggle: React.FC = () => {
   const { isDark, toggleDarkMode } = useDarkMode();
   return (
@@ -17,3 +16,4 @@ const DarkModeToggle: React.FC = () => {
 };
 
 export default DarkModeToggle;
+
