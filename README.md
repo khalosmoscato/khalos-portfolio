@@ -1,9 +1,11 @@
-# Khalos CF Moscato – Portfolio
+# Khalos Moscato – Portfolio
 
-Hi! I’m **Khalos CF Moscato**, a creative, detail-oriented software engineer based in **London**. I build **full-stack web and mobile apps** using **React, TypeScript, Node.js, Tailwind CSS**, and more. I’m passionate about **DevOps, AI/ML, fintech, biotech**, and delivering **responsive, accessible, and high-quality web experiences**.  
+Hi! I’m **Khalos Moscato**, a software engineer based in **London**. I specialise in building robust, mission-critical systems using the **.NET ecosystem**, while maintaining high-level proficiency in **TypeScript** and **React**.
 
-🌐 **Live Portfolio:** [https://khalos-portfolio.vercel.app](https://khalos-portfolio.vercel.app)  
-📧 **Contact:** khalos.moscato@gmail.com  
+Coming from a background in luxury management at **Louis Vuitton**, I bring a habit of precision, reliability, and extreme attention to detail to every codebase I touch.
+
+🌐 **Live Portfolio:** [https://khalos-portfolio.vercel.app](https://khalos-portfolio.vercel.app)
+📧 **Contact:** khalos.moscato@gmail.com
 
 ---
 
@@ -19,28 +21,29 @@ This portfolio showcases my **personal projects, UI/UX designs, and technical sk
 
 ---
 
-## Skills & Tech Stack
+## 🛠 Tech Stack
 
-- **Languages:** TypeScript, JavaScript, Python, C#  
-- **Frameworks / Libraries:** React, Node.js, Vite, Express, .NET, React Native  
-- **Database / APIs:** PostgreSQL, MongoDB, Supabase, REST APIs  
-- **DevOps / Deployment:** Docker, AWS, Vercel, GitHub Actions CI/CD  
-- **Testing & Quality:** Vitest, React Testing Library, ESLint, Prettier, Husky Git hooks  
-- **UI / Design:** Tailwind CSS (custom design system), Figma, responsive and accessible UI  
+- **Backend:** C#, .NET 8, ASP.NET Core, Node.js, Python, REST APIs
+- **Frontend:** React, TypeScript, JavaScript, Tailwind CSS, Vite, HTML/CSS
+- **Database & Cloud:** PostgreSQL, Entity Framework, MongoDB, Supabase, Docker, AWS
+- **Testing & Quality:** TDD, xUnit, Moq, Cypress, Vitest, Husky Git hooks
+- **Design:** Figma, Responsive UI, Accessibility (A11y)
 
 ---
 
-## Featured Projects
+## 🚀 Featured Projects
 
-> I will add project cards or links here with screenshots if possible. Example format:
+### PokéLike (API & Dashboard)
+A decoupled collection manager demonstrating backend architecture and containerisation.
+- **Tech:** .NET 8, C#, PostgreSQL, Docker, React.
+- **Key Features:** RESTful API, Repository Pattern, Docker-compose environment.
+- [Backend Source](https://github.com/khalosmoscato/pokelike-backend) | [Frontend Source](https://github.com/khalosmoscato/pokelike-frontend)
 
-### Project 1 – [Project Name](#)
-- Short description of what it does and technologies used.  
-- Live demo: [link] | GitHub: [link]
-
-### Project 2 – [Project Name](#)
-- Short description  
-- Live demo: [link] | GitHub: [link]
+### Zubi (Mobile-First E-Commerce)
+An accessible PWA focused on high-quality UX and rigorous testing.
+- **Tech:** React, TypeScript, Tailwind CSS, Cypress, TDD.
+- **Key Features:** Mobile-first design, accessibility compliance, full integration test suite.
+- [Backend Source](https://github.com/khalosmoscato/zubi-backend) | [Frontend Source](https://github.com/khalosmoscato/zubi-frontend)
 
 ---
 

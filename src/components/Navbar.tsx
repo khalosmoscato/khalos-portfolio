@@ -9,7 +9,7 @@ const Navbar: React.FC = () => (
         className="font-heading text-xl font-bold"
         aria-label="Go to top of page"
       >
-        Khalos CF Moscato
+        Khalos Moscato
       </a>
       <div className="flex items-center gap-4">
         <a

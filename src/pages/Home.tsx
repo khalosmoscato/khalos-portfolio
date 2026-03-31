@@ -8,7 +8,7 @@ const Home: React.FC = () => {
       aria-label="Home section"
     >
       <h1 className="mb-4 text-4xl font-bold sm:text-5xl">
-        Hi, I’m Khalos Calogero Filho Moscato 👋
+        Hi, I’m Khalos Moscato 👋
       </h1>
       <p className="mb-6 max-w-2xl text-lg sm:text-xl">
         Turning ideas into code with <strong>React</strong>, <strong>TypeScript</strong>,{' '}

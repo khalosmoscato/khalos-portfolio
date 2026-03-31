@@ -1,37 +1,75 @@
 import React from 'react';
 
 const About: React.FC = () => {
+  const skillCategories = [
+    { 
+      title: 'Backend', 
+      skills: 'C#, .NET 8, ASP.NET Core, Node.js, Python, REST APIs' 
+    },
+    { 
+      title: 'Frontend', 
+      skills: 'React, TypeScript, JavaScript, Tailwind CSS, Vite, HTML/CSS' 
+    },
+    { 
+      title: 'Database & Cloud', 
+      skills: 'PostgreSQL, Entity Framework, MongoDB, Supabase, Docker, AWS' 
+    },
+    { 
+      title: 'Testing & Tools', 
+      skills: 'TDD, xUnit, Moq, Cypress, Git, CI/CD, Figma, Agile' 
+    },
+  ];
+
   return (
     <section
       id="about"
       className="mx-auto max-w-4xl px-4 py-16"
       aria-label="About section"
     >
-      <h2 className="mb-6 text-3xl font-bold">About Me</h2>
-      <p className="mb-4 text-lg">
-        I’m <strong>Khalos Moscato</strong>, a creative and detail-oriented software
-        engineer based in London, U.K. After excelling in luxury retail at Louis Vuitton
-        and Oyuna, I transitioned into tech and have since built full-stack web and mobile
-        apps with technologies like React, TypeScript, Node.js, C#, .NET, PostgreSQL,
-        MongoDB, and AWS.
-      </p>
-      <p className="mb-4 text-lg">
-        I’m passionate about <strong>DevOps</strong> and{' '}
-        <strong>AI/ML engineering</strong>, and I’m always curious to explore new
-        technologies, whether in fintech, biotech, or game development.
-      </p>
-      <p className="mb-6 text-lg">
-        Outside of tech, you’ll find me <strong>cycling</strong>,{' '}
-        <strong>travelling</strong>, playing the <strong>piano</strong>, or enjoying a
-        good video game 🎮. I value openness, diversity, and collaboration, and I thrive
-        in inclusive environments.
-      </p>
-      <a
-        href="#contact"
-        className="inline-block rounded-2xl bg-primary px-6 py-3 text-white shadow-md hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary"
-      >
-        Get in Touch
-      </a>
+      <h2 className="mb-6 text-3xl font-bold text-gray-900 dark:text-white">About Me</h2>
+      
+      <div className="space-y-6 text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+        <p>
+          I’m <strong>Khalos Moscato</strong>, a software engineer based in London specialising in the <strong>.NET ecosystem</strong>. 
+          Transitioning from luxury management at <strong>Louis Vuitton</strong> and <strong>Oyuna</strong>, 
+          I bring a high-stakes mindset to software development—focusing on the precision and reliability required for enterprise-grade systems.
+        </p>
+
+        <p>
+          I am a <strong>polyglot engineer</strong>. While my primary focus is architecting robust back-end services with <strong>C#</strong>, 
+          I am equally proficient in <strong>TypeScript</strong> and <strong>Python</strong>. I believe in selecting the right tool for the job, 
+          whether that’s building a high-performance RESTful API or an accessible, mobile-first frontend.
+        </p>
+      </div>
+
+      {/* Technical Toolkit Grid */}
+      <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
+        {skillCategories.map((category) => (
+          <div 
+            key={category.title} 
+            className="flex flex-col h-full rounded-xl border border-gray-100 bg-gray-50/50 p-6 dark:border-gray-800 dark:bg-gray-900/50 transition-all hover:border-primary/30"
+          >
+            <h3 className="mb-2 text-sm font-bold uppercase tracking-widest text-primary">
+              {category.title}
+            </h3>
+            <p className="text-gray-600 dark:text-gray-400">
+              {category.skills}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      <div className="mt-10 flex flex-col items-start gap-6 sm:flex-row sm:items-center">
+        <a
+          href="#contact"
+          className="inline-block rounded-2xl bg-primary px-8 py-3 text-sm font-bold text-white shadow-md transition-all hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary"
+        >
+          Get in Touch
+        </a>
+        <p className="text-sm text-gray-500 italic">
+          Multilingual: English, Italian, Spanish, & Portuguese.
+        </p>
+      </div>
     </section>
   );
 };
