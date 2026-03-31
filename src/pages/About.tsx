@@ -4,7 +4,7 @@ const About: React.FC = () => {
   const skillCategories = [
     { 
       title: 'Backend', 
-      skills: 'C#, .NET 8, ASP.NET Core, Node.js, Python, REST APIs' 
+      skills: 'C#, .NET 8 and 10, ASP.NET Core, Node.js, Python, REST APIs' 
     },
     { 
       title: 'Frontend', 
@@ -16,7 +16,7 @@ const About: React.FC = () => {
     },
     { 
       title: 'Testing & Tools', 
-      skills: 'TDD, xUnit, Moq, Cypress, Git, CI/CD, Figma, Agile' 
+      skills: 'TDD, xUnit, Moq, Vitest, Cypress, Git, CI/CD, Figma, Agile' 
     },
   ];
 
