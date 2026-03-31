@@ -1,15 +1,17 @@
 import { render, screen } from '@testing-library/react';
 import Projects from '../Projects';
+import '@testing-library/jest-dom';
 
-describe('Projects page', () => {
-  it('renders Projects page content', () => {
+describe('Projects Page', () => {
+  test('renders projects heading', () => {
     render(<Projects />);
+    const headingElement = screen.getByText(/^Projects$/i);
+    expect(headingElement).toBeInTheDocument();
+  });
 
-    expect(screen.getByRole('heading', { name: /Projects/i })).toBeInTheDocument();
-    expect(
-      screen.getByText(/I’ll soon showcase selected projects here/i),
-    ).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /GitHub/i })).toBeInTheDocument();
-    expect(screen.getByText(/Coming Soon 🚧/i)).toBeInTheDocument();
+  test('renders project cards', () => {
+    render(<Projects />);
+    const projectCards = screen.getAllByRole('heading', { level: 3 });
+    expect(projectCards.length).toBeGreaterThan(0);
   });
 });
