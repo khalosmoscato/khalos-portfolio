@@ -4,18 +4,21 @@ const Projects: React.FC = () => {
   return (
     <section
       id="projects"
-      className="mx-auto max-w-5xl px-4 py-16"
+      className="mx-auto max-w-4xl px-4 py-16"
       aria-label="Projects section"
     >
-      <div className="flex flex-col gap-4 mb-12">
-        <h2 className="text-4xl font-bold">Projects</h2>
-        <p className="text-gray-600 dark:text-gray-400 max-w-2xl">
+      {/* Centered Header for Desktop and Mobile */}
+      <div className="flex flex-col gap-4 mb-12 text-center">
+        <h2 className="text-4xl font-bold text-gray-900 dark:text-white">
+          Projects
+        </h2>
+        <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg">
           A selection of my recent work focusing on scalable architecture, 
           user-centric design, and robust testing patterns.
         </p>
       </div>
       
-      <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2">
+      <div className="grid gap-8 grid-cols-1 md:grid-cols-2">
         
         {/* ZUBI Project Card */}
         <div className="flex flex-col rounded-2xl border bg-white p-8 shadow-sm transition-all hover:shadow-md dark:bg-gray-900 dark:border-gray-800">
@@ -104,11 +107,15 @@ const Projects: React.FC = () => {
         </div>
       </div>
 
-      {/* Enterprise Project Bar */}
+      {/* Enterprise Project Bar - Centered Content */}
       <div className="mt-12 flex flex-col items-center justify-between rounded-2xl border border-dashed border-gray-300 p-8 dark:border-gray-700 sm:flex-row">
         <div className="text-center sm:text-left">
-          <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">Major Enterprise .NET Project</h3>
-          <p className="text-sm text-gray-500">Currently architecting a high-stakes application with Clean Architecture and TDD.</p>
+          <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
+            Major Enterprise .NET Project
+          </h3>
+          <p className="text-sm text-gray-500">
+            Currently architecting a high-stakes application with Clean Architecture and TDD.
+          </p>
         </div>
         <div className="mt-4 inline-block animate-pulse rounded-full bg-gray-100 px-6 py-2 text-xs font-bold uppercase tracking-widest text-gray-400 dark:bg-gray-800 sm:mt-0">
           Coming June 2026

@@ -26,16 +26,20 @@ const About: React.FC = () => {
       className="mx-auto max-w-4xl px-4 py-16"
       aria-label="About section"
     >
-      <h2 className="mb-6 text-3xl font-bold text-gray-900 dark:text-white">About Me</h2>
+      {/* Title updated to text-4xl and fully centered */}
+      <h2 className="mb-8 text-center text-4xl font-bold text-gray-900 dark:text-white">
+        About Me
+      </h2>
       
-      <div className="space-y-6 text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-        <p>
+      {/* Paragraphs centered for a cohesive look with the title */}
+      <div className="space-y-6 text-center text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+        <p className="mx-auto max-w-3xl">
           I’m <strong>Khalos Moscato</strong>, a software engineer based in London specialising in the <strong>.NET ecosystem</strong>. 
           Transitioning from luxury management at <strong>Louis Vuitton</strong> and <strong>Oyuna</strong>, 
           I bring a high-stakes mindset to software development—focusing on the precision and reliability required for enterprise-grade systems.
         </p>
 
-        <p>
+        <p className="mx-auto max-w-3xl">
           I am a <strong>polyglot engineer</strong>. While my primary focus is architecting robust back-end services with <strong>C#</strong>, 
           I am equally proficient in <strong>TypeScript</strong> and <strong>Python</strong>. I believe in selecting the right tool for the job, 
           whether that’s building a high-performance RESTful API or an accessible, mobile-first frontend.
@@ -59,14 +63,15 @@ const About: React.FC = () => {
         ))}
       </div>
 
-      <div className="mt-10 flex flex-col items-start gap-6 sm:flex-row sm:items-center">
+      {/* Centered button/text container */}
+      <div className="mt-12 flex flex-col items-center gap-6">
         <a
           href="#contact"
           className="inline-block rounded-2xl bg-primary px-8 py-3 text-sm font-bold text-white shadow-md transition-all hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary"
         >
           Get in Touch
         </a>
-        <p className="text-sm text-gray-500 italic">
+        <p className="text-center text-sm italic text-gray-500">
           Multilingual: English, Italian, Spanish, & Portuguese.
         </p>
       </div>
